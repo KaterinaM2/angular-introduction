@@ -15,6 +15,6 @@ export class AppComponent {
     givenName:'Katerina',
     surName:'Mavria',
     age:27,
-    email: 'mavria.katerina@gmail.com'
-  }
+    email: 'mavria.katerina@gmail.com',
+  };
 }
