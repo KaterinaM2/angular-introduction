@@ -13,8 +13,8 @@ export class AppComponent {
 
   person = {
     givenName:'Katerina',
-    surname:'Mavria',
-    age:0x27,
+    surName:'Mavria',
+    age:27,
     email: 'mavria.katerina@gmail.com'
   }
 }
