@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Person } from 'src/app/shared/interfaces/person.ts';
+import { Person } from '../../shared/interfaces/person';
 
 
 @Component({
