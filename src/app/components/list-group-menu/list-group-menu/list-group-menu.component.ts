@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
-import { MenuItem } from '../../shared/interfaces/menu-item';
+import { MenuItem } from '/Documents and Settings/Katerina/Documents/CF/Angular/angular-introduction/src/app/shared/interfaces/menu-item';
 
 @Component({
   selector: 'app-list-group-menu',
@@ -14,5 +14,9 @@ export class ListGroupMenuComponent {
     { text: 'Component Input Example', routerLink: 'component-input-example' },
     { text: '@for Directive Example', routerLink: 'for-directive-example' },
     { text: 'Event Bind Example', routerLink: 'event-bind-example' },
+    {
+      text: 'Simple Datatable Example',
+      routerLink: 'simple-datatable-example',
+    },
   ];
 }
