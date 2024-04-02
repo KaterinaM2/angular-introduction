@@ -49,15 +49,11 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": ["node_modules/bootstrap/dist/css/bootstrap.min.css",
-            "src/styles.css"
+            "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/styles.css"
             ],
-            "scripts": [],
-            "server": "src/main.server.ts",
-            "prerender": true,
-            "ssr": {
-              "entry": "server.ts"
-            }
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -126,6 +122,6 @@
     }
   },
   "cli": {
-    "analytics": "a2b25862-8aab-41ea-b44b-634f983a5732"
+    "analytics": false
   }
 }

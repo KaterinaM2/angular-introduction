@@ -1,7 +1,6 @@
-import { Component, Input, Output } from '@angular/core';
-import { EPerson } from '../../shared/interfaces/person';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { sortBy } from 'lodash-es';
-import { EventEmitter } from 'stream';
+import { EPerson } from '../../shared/interfaces/person';
 
 @Component({
   selector: 'app-simple-datatable',
@@ -19,7 +18,7 @@ export class SimpleDatatableComponent {
     surName: 'none',
     age: 'none',
     email: 'none',
-    education: 'none'
+    education: 'none',
   };
 
   sortData(sortKey: string) {

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { Person } from '/Documents and Settings/Katerina/Documents/CF/Angular/angular-introduction/src/app/shared/interfaces/person';
-import { PersonTableComponent } from '/Documents and Settings/Katerina/Documents/CF/Angular/angular-introduction/src/app/components/person-table/person-table.component';
+
+import { Person } from '../../shared/interfaces/person';
+import { PersonTableComponent } from '../person-table/person-table.component';
 
 @Component({
   selector: 'app-component-input-example',

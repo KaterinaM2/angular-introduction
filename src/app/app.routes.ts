@@ -21,5 +21,5 @@ export const routes: Routes = [
         component: SimpleDatatableExampleComponent,
       },
       { path: '', component: WelcomeComponent },
-      {path: '', component:ComponentInputExampleComponent}
+      {path: '', component:ComponentInputExampleComponent},
 ];
