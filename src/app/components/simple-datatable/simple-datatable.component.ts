@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { EPerson } from '../../shared/interfaces/person';
+import { sortBy } from 'lodash-es';
 
 @Component({
   selector: 'app-simple-datatable-example',
@@ -17,21 +18,21 @@ export class SimpleDatatableComponent {
     age: 'none',
     email: 'none',
     education: 'none'
-  }
+  };
 
   sortData(sortKey: string) {
     if (this.sortOrder[sortKey] === 'asc') {
-      this.sortOrder[sortKey] === 'desc';
+      this.sortOrder[sortKey] = 'desc';
       this.data = sortBy(this.data, sortKey).reverse();
     } else {
       this.sortOrder[sortKey] = 'asc';
-      this.data = sortBy(this.data,sortKey);
+      this.data = sortBy(this.data, sortKey);
     }
-  }
 
-  for (let key in this.sortOrder) {
-    if (key !== sortKey) {
-      this.sortOrder[key] = 'none';
+    for (let key in this.sortOrder) {
+      if (key !== sortKey) {
+        this.sortOrder[key] = 'none';
+      }
     }
   }
 
@@ -44,8 +45,4 @@ export class SimpleDatatableComponent {
       return '';
     }
   }
-}
-
-function sortBy(data: EPerson[], sortKey: string) {
-  throw new Error('Function not implemented.');
 }
