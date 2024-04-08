@@ -1,7 +1,6 @@
 import { Component, Input} from '@angular/core';
 import { Person, EPerson } from '../../shared/interfaces/person';
 
-
 @Component({
   selector: 'app-person-table',
   standalone: true,
