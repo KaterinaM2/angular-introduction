@@ -29,5 +29,6 @@ export class ListGroupMenuComponent {
 routerLink:'reactive-form-example'},
 {text:'HTTP Client Example', routerLink:'http-client-example'},
 {text:'User Registration', routerLink:'user-registration'},
+{text:'Restricted Content Example', routerLink:'restricted-content-example'},
   ];
 }
