@@ -11,6 +11,8 @@ import { ReactiveFormExampleComponent } from './components/reactive-form-example
 import { HttpClientExampleComponent } from './components/http-client-example/http-client-example.component';
 import { UserRegistrationComponent } from './components/user-registration/user-registration.component';
 import { RestrictedContentExampleComponent } from './components/restricted-content-example/restricted-content-example.component';
+import { FunForNerdsComponent } from './components/fun-for-nerds/fun-for-nerds/fun-for-nerds.component';
+
 
 export const routes: Routes = [
   {
@@ -35,5 +37,6 @@ export const routes: Routes = [
   {path:'reactive-form-example', component:ReactiveFormExampleComponent},
   {path:'http-client-example', component:HttpClientExampleComponent},
   {path:'user-registration', component:UserRegistrationComponent},
-  {path:'restricted-content-example', component:RestrictedContentExampleComponent}
+  {path:'restricted-content-example', component:RestrictedContentExampleComponent},
+  { path: 'fun-for-nerds', component: FunForNerdsComponent },
 ];
